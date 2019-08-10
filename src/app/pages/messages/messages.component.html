@@ -1,0 +1,36 @@
+<div class="image-header" *ngIf="imageHeader"
+  [style.backgroundImage]="'url('+ imageHeader +')'"></div>
+<div id="page-content">
+  <div class="box-content">
+    <div class="container">
+      <!-----------------Content-------------------->
+      <article class="single-post">
+        <div class="wrap-post">
+          <!--Start Box-->
+          <div class="entry-header">
+            <h1 class="entry-title  text-center">Messages</h1>
+            <!-- ////////////Content Box 02 -->
+            <table class="messages">
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+              </tr>
+              <tr *ngFor="let message of messages">
+                <td>{{ message.id }}</td>
+                <td>{{ message.name }}</td>
+                <td>{{ message.email }}</td>
+                <td>{{ message.subject }}</td>
+                <td>{{ message.message }}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+</div>

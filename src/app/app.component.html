@@ -1,0 +1,193 @@
+<!--Header-->
+<header>
+  <!---Main Header--->
+  <div class="main-header">
+
+    <!--Navigation-->
+    <nav id="menu" class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="btn btn-navbar navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <i class="fa fa-bars" (click)="navController()"></i>
+          </button>
+          <a class=" navbar-brand" routerLink="/">
+            <img src="assets/images/name_header.JPG" width="250px" />
+          </a>
+          <section id="current"></section>
+        </div>
+        <div id="navMenu" class="navbar-collapse navbar-ex1-collapse"
+          [class.collapse]="openMenu">
+          <ul class="nav navbar-nav">
+            <li><a routerLink="" (click)="navController()">Home</a></li>
+            <li>
+              <a routerLink="/about" routerLinkActive="active-link"
+                (click)="navController()">
+                About Me
+              </a>
+            </li>
+            <li class="dropdown">
+              <a (click)="dropdownMenuController('projects')"
+                routerLinkActive="active-link">
+                Projects<i class="fa fa-chevron-down"></i>
+              </a>
+              <div class="menu-transition" [class.dropdown-menu]="projects">
+                <div class="dropdown-inner">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i>
+                        <a routerLink="/projects" routerLinkActive="active-link"
+                          (click)="navController()">
+                          VIEW ALL
+                        </a>
+                      </i>
+                    </li>
+                    <li>
+                      <a routerLink="/projects/adtechsystems"
+                        routerLinkActive="active-link"
+                        (click)="navController()">
+                        AdtechSystems.com
+                      </a>
+                    </li>
+                    <li>
+                      <a routerLink="projects/omega-beta-sigma-psi"
+                        routerLinkActive="active-link"
+                        (click)="navController()">
+                        Omega.BetaSigmaPsi.org
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a routerLink="/projects/alexwtrimpe"
+                        routerLinkActive="active-link"
+                        (click)="navController()">
+                        AlexWTrimpe.com
+                      </a>
+                    </li>
+                    <li>
+                      <a routerLink="/projects/arduino"
+                        routerLinkActive="active-link"
+                        (click)="navController()">
+                        Arduino
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- <li>
+              <a routerLink="/blog" routerLinkActive="active-link"
+                (click)="navController()">
+                Blog
+              </a>
+            </li> -->
+            <li>
+              <a routerLink="/contact" routerLinkActive="active-link"
+                (click)="navController()">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <router-outlet></router-outlet>
+
+    <!--Footer-->
+    <footer id="footer">
+      <div class="container">
+        <div class="wrap-footer">
+          <div class="row">
+            <div class="footer-contact-info">
+              <div class="contact-info-item">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div class="contact-info-icon">
+                      <i class="fa fa-home"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Hometown</h3>
+                    <p>Columbus, IN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div class="contact-info-icon">
+                      <i class="fa fa-map-marker"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Location</h3>
+                    <p>Detroit, MI</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div class="contact-info-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Phone</h3>
+                    <p> (ITS) PRI-VATE</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div class="contact-info-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Email</h3>
+                    <p> alexwtrimpe@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <ul class="list-inline footer-link link">
+            <li>
+              <a target="_blank" href="https://www.facebook.com/alxtrimpe">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/alxtrimpe/">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/alxtrimpe">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a target="_blank"
+                href="https://www.linkedin.com/in/alexwtrimpe/">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <span>Copyright &copy; {{year}} - Alex W. Trimpe</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Back to Top icon -->
+    <a id="return-to-top" matRipple (click)="goToTop()"><i
+        class="fas fa-angle-up"></i></a>

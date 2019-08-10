@@ -1,0 +1,64 @@
+<div class="image-header" *ngIf="imageHeader"
+  [style.backgroundImage]="'url('+ imageHeader +')'"></div>
+<div id="page-content">
+  <section class="box-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 box-item">
+          <h3>Contact Info</h3>
+          <span>
+            Feel free to contact me at any time. I am always attached to my
+            cell and I will get back to you as soon as possible.
+          </span>
+          <br />
+          <br />
+          <p style="display: inline;">
+            Downtown<br />
+            Detroit, MI
+          </p>
+          <br /><br />
+          <p style="display: inline;">alexwtrimpe@gmail.com</p>
+        </div>
+        <div class="col-md-8">
+          <h3>Contact Form</h3>
+          <form class="angular-form" [formGroup]="contactForm"
+            #formDirective="ngForm">
+            <mat-form-field appearance="outline">
+              <mat-label>Enter your name</mat-label>
+              <input matInput placeholder="Enter your name" name="name"
+                formControlName="name" maxlength="50" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Enter your email</mat-label>
+              <input matInput placeholder="Enter your email" name="email"
+                formControlName="email" maxlength="50" required />
+              <mat-error *ngIf="contactForm.get('email').invalid">
+                {{getErrorMessage()}}
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Subject</mat-label>
+              <input matInput placeholder="Subject" name="subject"
+                formControlName="subject" #subject maxlength="50" required />
+              <mat-hint>{{subject.value.length}}/50</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Message</mat-label>
+              <textarea matInput placeholder="Message" id="message"
+                name="message" ng-model="message" formControlName="message"
+                #message minlength="10" maxlength="250" required></textarea>
+              <mat-hint>{{message.value.length}}/250</mat-hint>
+            </mat-form-field>
+
+            <button type="submit" class="btn btn-skin btn-block" matRipple
+              [disabled]="contactForm.invalid"
+              (click)="onSubmit()">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

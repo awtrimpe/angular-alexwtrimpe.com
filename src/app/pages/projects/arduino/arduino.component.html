@@ -1,0 +1,109 @@
+<div id="page-content">
+  <div class="box-content">
+    <div class="container">
+      <!-----------------Content-------------------->
+      <article class="single-post">
+        <div class="wrap-post">
+          <!--Start Box-->
+          <div class="entry-header text-center">
+            <h1 class="entry-title">Arduino Project</h1>
+            <!-- ////////////Content Box 02 -->
+            <img src="assets/images/arduino.jpg">
+            <span class="entry-meta">
+              <ul class="list-inline link">
+                <li>By <a href="#">Alex Trimpe</a></li>
+                <li><a href="#">January, 3 2019</a></li>
+                <li><a href="#">0 comments</a></li>
+              </ul>
+            </span>
+          </div>
+          <div class="entry-content">
+            <p>I actually have very little to say about this project
+              since it was just a school project and my first time
+              using an Arduino. However, it was still pretty fun and
+              everything on the project is something that I made.
+              We 3D printed our own cases and wrote our own code for
+              the Arduino. Since I cannot easily give you a starter
+              for your own 3D printing project, I will pass on my
+              code for controlling the components of this project
+              through an Arduino. The components I used are:
+            </p>
+            <uL>
+              <li>2 motors</li>
+              <li>1 motion sensor</li>
+              <li>1 photosensor</li>
+              <li>3 LEDs</li>
+              <li>1 button</li>
+            </uL>
+            <p>Best of luck on your project!</p>
+            <pre style="width: 100%;">
+{{"int led = 13;
+int led2 = 12;
+int led3 = 11;
+int motionPin = 4;
+const int buttonPin = 2;
+const int motorPin = 9;
+const int motorPin2 = 10;
+
+// variables will change:
+int buttonState = 0;         // variable for reading the pushbutton status
+int motionState = 0;
+
+// the setup routine runs once when you press reset:
+void setup() {               
+  // initialize the digital pin as an output.
+  pinMode(led, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(motionPin, INPUT);
+  pinMode(buttonPin, INPUT);
+  pinMode(motorPin, OUTPUT);
+  pinMode(motorPin2, OUTPUT);   
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  motionState = digitalRead(motionPin);  // read input value
+  buttonState = digitalRead(buttonPin);
+  if (motionState == HIGH && buttonState == HIGH) {       
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(50);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  delay(50); 
+  {digitalWrite(led2, HIGH);
+  delay(50);
+  digitalWrite(led2, LOW);
+  delay(50);}
+  {digitalWrite(led3, HIGH);
+  delay(50);
+  digitalWrite(led3, LOW);
+  delay(50);}// wait for a second
+  }
+  if (buttonState == LOW) {
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(100);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  delay(100); 
+  {digitalWrite(led2, HIGH);
+  delay(100);
+  digitalWrite(led2, LOW);
+  delay(100);}
+  {digitalWrite(led3, HIGH);
+  delay(100);
+  digitalWrite(led3, LOW);
+  delay(100);}// wait for a second
+  digitalWrite(motorPin, HIGH);
+  digitalWrite(motorPin2, HIGH);
+  }
+  else {
+  digitalWrite(motorPin, LOW);
+  digitalWrite(motorPin2, LOW);
+  }
+}"}}
+                        </pre>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
