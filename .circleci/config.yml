@@ -2,9 +2,6 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-# load-nvm.sh
-export NVM_DIR="/opt/circleci/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 version: 2
 jobs:
