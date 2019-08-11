@@ -2,6 +2,10 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+# load-nvm.sh
+export NVM_DIR="/opt/circleci/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 version: 2
 jobs:
   build:
@@ -17,12 +21,6 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - run:
-          name: "Update Node.js and npm"
-          command: |
-            curl -sSL "https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-x64.tar.gz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v10.16.0-linux-x64/bin/node
-            curl https://www.npmjs.com/install.sh | sudo bash
-
       - checkout
 
       # Download and cache dependencies

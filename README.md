@@ -5,7 +5,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
 Is this project overkill for a personal website? Absolutely it is. I have made
-this site as a to explore and learn more about Angular while running this site
+this site as a way to explore and learn more about Angular while running this site
 and its related API on my Raspberry Pi. Feel free to use this or any components
 within as a building block for your own learning.
 
