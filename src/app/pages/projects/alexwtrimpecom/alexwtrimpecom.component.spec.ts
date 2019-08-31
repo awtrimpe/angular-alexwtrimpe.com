@@ -1,3 +1,4 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 import { AlexWTrimpeProjectComponent } from "src/app/pages/projects/alexwtrimpecom/alexwtrimpecom.component";
@@ -10,7 +11,8 @@ describe("AlexWTrimpeProjectComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [AlexWTrimpeProjectComponent]
+      declarations: [AlexWTrimpeProjectComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 

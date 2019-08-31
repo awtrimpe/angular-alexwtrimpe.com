@@ -13,6 +13,10 @@ import {
 import { MatRippleModule } from "@angular/material/core";
 import { BrowserModule, Title } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import {
+  NgxHighlightJsModule,
+  NGX_HIGHLIGHT_JS_DEFAULT_THEME
+} from "@nowzoo/ngx-highlight-js";
 import { AppRoutingModule } from "src/app/app-routing.module";
 import { AppComponent } from "src/app/app.component";
 import { AboutComponent } from "src/app/pages/about/about.component";
@@ -71,8 +75,15 @@ export class MaterialModule {}
     FormsModule,
     HttpClientModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxHighlightJsModule.forRoot()
   ],
-  providers: [MessageService, StockService, Title, ImageService]
+  providers: [
+    MessageService,
+    StockService,
+    Title,
+    ImageService,
+    { provide: NGX_HIGHLIGHT_JS_DEFAULT_THEME, useValue: "atelier-cave-dark" }
+  ]
 })
 export class AppModule {}

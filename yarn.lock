@@ -319,6 +319,20 @@
     tree-kill "1.2.1"
     webpack-sources "1.3.0"
 
+"@nowzoo/ngx-highlight-js@^2.1.15":
+  version "2.1.15"
+  resolved "https://registry.yarnpkg.com/@nowzoo/ngx-highlight-js/-/ngx-highlight-js-2.1.15.tgz#c97d03e793088abb8eea4a0cb4fe10dceae5eb55"
+  integrity sha512-xsOjWT+jIxVC2zefV/kPc6Pv/Jm/n1DcqRjc3da+e0x5ipBS/rrAPljBiEO9Dl06iA7F44slm26jAdR/fJ5zBQ==
+  dependencies:
+    tslib "^1.9.0"
+
+"@nowzoo/sheetload@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@nowzoo/sheetload/-/sheetload-0.0.7.tgz#c573e14342946f18408c467cc054224f55cc3bb3"
+  integrity sha512-zIEjsIR0MfHtDo+wKPx5kbKG5zh9tQp8lDuiyN36hKInrcLYLwwPgEM26wtyAP1HJBoOPJ4pWkD4FDHvSYP+Hw==
+  dependencies:
+    tslib "^1.9.0"
+
 "@schematics/angular@8.1.3":
   version "8.1.3"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.1.3.tgz#dc465dae7ef658ac945551e12990676fdac188ec"
