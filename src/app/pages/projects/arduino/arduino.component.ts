@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
   templateUrl: "./arduino.component.html"
 })
 export class ArduinoProjectComponent {
-  arduino = `
+  public arduino = `
   int led = 13;
   int led2 = 12;
   int led3 = 11;

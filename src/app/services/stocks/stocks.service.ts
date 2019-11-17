@@ -12,7 +12,7 @@ export class StockService {
    * Returns all stocks stored in the database that meeting the requirements of
    * above 99% increase for the year and above a 24% increase for the last quarter
    */
-  getGoodStocks(): Observable<Stock[]> {
+  public getGoodStocks(): Observable<Stock[]> {
     return this.http
       .get<Stock[]>(environment.apiURL + "stocks/goodStocks")
       .pipe(catchError(handleError));

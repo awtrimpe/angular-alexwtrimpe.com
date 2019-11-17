@@ -4,5 +4,5 @@ import { Component } from "@angular/core";
   templateUrl: "./blog.component.html"
 })
 export class BlogComponent {
-  imageHeader = "assets/images/alexReagoCanada.JPG";
+  public imageHeader = "assets/images/alexReagoCanada.JPG";
 }

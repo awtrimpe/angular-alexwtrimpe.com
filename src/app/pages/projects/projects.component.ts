@@ -6,7 +6,8 @@ import { ImageService } from "src/app/services/image/image.service";
 })
 export class ProjectsComponent implements OnInit {
   constructor(private _imageService: ImageService) {}
-  imageHeader: string;
+
+  public imageHeader: string;
 
   ngOnInit() {
     this._imageService.currentBackground.subscribe(

@@ -14,7 +14,7 @@ export class MessagesComponent implements OnInit {
   ) {}
 
   public messages: Message[];
-  imageHeader: string;
+  public imageHeader: string;
 
   ngOnInit(): void {
     this._imageService.currentBackground.subscribe(
