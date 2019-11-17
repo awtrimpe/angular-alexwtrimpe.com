@@ -18,8 +18,8 @@ export class StocksComponent implements OnInit {
   @ViewChild(MatSort, { static: false }) sort: MatSort;
 
   public goodStocks: MatTableDataSource<Stock>;
-  imageHeader: string;
-  displayedColumns = [
+  public imageHeader: string;
+  public displayedColumns = [
     "id",
     "price",
     "stockID",

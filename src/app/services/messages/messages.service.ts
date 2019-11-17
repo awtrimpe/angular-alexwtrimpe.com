@@ -18,7 +18,7 @@ export class MessageService {
    * Returns all stocks stored in the database that meeting the requirements of
    * above 99% increase for the year and above a 24% increase for the last quarter
    */
-  getMessages(): Observable<Message[]> {
+  public getMessages(): Observable<Message[]> {
     return this.http
       .get<Message[]>(`${environment.apiURL}messages/getMessages`)
       .pipe(catchError(handleError));
@@ -26,9 +26,9 @@ export class MessageService {
 
   /**
    * Submits message to be stored in the backend database
-   * @param message the formattted message to submit
+   * @param message the formatted message to submit
    */
-  submitMessage(message: Message): Observable<GenericMessage> {
+  public submitMessage(message: Message): Observable<GenericMessage> {
     return this.http
       .post<GenericMessage>(
         `${environment.apiURL}messages/formSubmission`,

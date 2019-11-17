@@ -13,9 +13,10 @@ export class AppComponent implements OnInit {
     private _router: Router,
     private _titleService: Title
   ) {}
-  year = new Date().getFullYear();
-  projects = false;
-  openMenu = true;
+
+  public year = new Date().getFullYear();
+  public projects = false;
+  public openMenu = true;
 
   ngOnInit() {
     this._router.events.subscribe(event => {
@@ -28,17 +29,17 @@ export class AppComponent implements OnInit {
     });
   }
 
-  navController() {
+  public navController() {
     this.openMenu = !this.openMenu;
   }
 
-  dropdownMenuController(menuName) {
+  public dropdownMenuController(menuName) {
     if (menuName === "projects") {
       this.projects = !this.projects;
     }
   }
 
-  goToTop() {
+  public goToTop() {
     window.scroll(0, 0);
   }
 }

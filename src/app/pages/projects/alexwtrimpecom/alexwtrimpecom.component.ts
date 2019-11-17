@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
   templateUrl: "./alexwtrimpecom.component.html"
 })
 export class AlexWTrimpeProjectComponent {
-  pyCode = `
+  public pyCode = `
   import json
   import os
   import sys

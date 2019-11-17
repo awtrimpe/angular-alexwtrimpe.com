@@ -14,8 +14,8 @@ export class ContactComponent implements OnInit {
     private _messageService: MessageService
   ) {}
 
-  imageHeader = "assets/images/babyMe.jpg";
-  contactForm: FormGroup;
+  public imageHeader = "assets/images/babyMe.jpg";
+  public contactForm: FormGroup;
 
   ngOnInit() {
     this._imageService.currentBackground.subscribe(
