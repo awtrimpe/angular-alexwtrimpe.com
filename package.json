@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prettier": "prettier --write src/**/*.{graphql,json,md,ts,yaml}",
+    "beautify": "js-beautify --end-with-newline --indent-size=1 src/**/*.{html,css,js}"
   },
   "private": true,
   "dependencies": {
@@ -37,18 +39,37 @@
     "@types/node": "~8.9.4",
     "@types/puppeteer": "^1.12.4",
     "codelyzer": "^5.0.0",
+    "husky": "^3.0.9",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
+    "js-beautify": "^1.10.2",
     "karma": "~4.1.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "karma-spec-reporter": "0.0.32",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
     "protractor": "~5.4.0",
     "puppeteer": "^1.18.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{graphql,json,md,ts,yaml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.{html,css,js}": [
+      "js-beautify --end-with-newline --indent-size=2",
+      "git add"
+    ]
   }
 }
