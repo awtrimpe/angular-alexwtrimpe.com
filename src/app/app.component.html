@@ -7,8 +7,7 @@
     <nav id="menu" class="navbar">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="btn btn-navbar navbar-toggle"
-            data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <i class="fa fa-bars" (click)="navController()"></i>
           </button>
           <a class=" navbar-brand" routerLink="/">
@@ -16,19 +15,16 @@
           </a>
           <section id="current"></section>
         </div>
-        <div id="navMenu" class="navbar-collapse navbar-ex1-collapse"
-          [class.collapse]="openMenu">
+        <div id="navMenu" class="navbar-collapse navbar-ex1-collapse" [class.collapse]="openMenu">
           <ul class="nav navbar-nav">
             <li><a routerLink="" (click)="navController()">Home</a></li>
             <li>
-              <a routerLink="/about" routerLinkActive="active-link"
-                (click)="navController()">
+              <a routerLink="/about" routerLinkActive="active-link" (click)="navController()">
                 About Me
               </a>
             </li>
             <li class="dropdown">
-              <a (click)="dropdownMenuController('projects')"
-                routerLinkActive="active-link">
+              <a (click)="dropdownMenuController('projects')" routerLinkActive="active-link">
                 Projects<i class="fa fa-chevron-down"></i>
               </a>
               <div class="menu-transition" [class.dropdown-menu]="projects">
@@ -36,39 +32,30 @@
                   <ul class="list-unstyled">
                     <li>
                       <i>
-                        <a routerLink="/projects" routerLinkActive="active-link"
-                          (click)="navController()">
+                        <a routerLink="/projects" routerLinkActive="active-link" (click)="navController()">
                           VIEW ALL
                         </a>
                       </i>
                     </li>
                     <li>
-                      <a routerLink="/projects/adtechsystems"
-                        routerLinkActive="active-link"
-                        (click)="navController()">
+                      <a routerLink="/projects/adtechsystems" routerLinkActive="active-link" (click)="navController()">
                         AdtechSystems.com
                       </a>
                     </li>
                     <li>
-                      <a routerLink="projects/omega-beta-sigma-psi"
-                        routerLinkActive="active-link"
-                        (click)="navController()">
+                      <a routerLink="projects/omega-beta-sigma-psi" routerLinkActive="active-link" (click)="navController()">
                         Omega.BetaSigmaPsi.org
                       </a>
                     </li>
                   </ul>
                   <ul class="list-unstyled">
                     <li>
-                      <a routerLink="/projects/alexwtrimpe"
-                        routerLinkActive="active-link"
-                        (click)="navController()">
+                      <a routerLink="/projects/alexwtrimpe" routerLinkActive="active-link" (click)="navController()">
                         AlexWTrimpe.com
                       </a>
                     </li>
                     <li>
-                      <a routerLink="/projects/arduino"
-                        routerLinkActive="active-link"
-                        (click)="navController()">
+                      <a routerLink="/projects/arduino" routerLinkActive="active-link" (click)="navController()">
                         Arduino
                       </a>
                     </li>
@@ -83,8 +70,7 @@
               </a>
             </li> -->
             <li>
-              <a routerLink="/contact" routerLinkActive="active-link"
-                (click)="navController()">
+              <a routerLink="/contact" routerLinkActive="active-link" (click)="navController()">
                 Contact
               </a>
             </li>
@@ -136,7 +122,7 @@
                   </div>
                   <div class="col-md-10">
                     <h3>Phone</h3>
-                    <p> (ITS) PRI-VATE</p>
+                    <p> (900) MIX-ALOT</p>
                   </div>
                 </div>
               </div>
@@ -174,8 +160,7 @@
               </a>
             </li>
             <li>
-              <a target="_blank"
-                href="https://www.linkedin.com/in/alexwtrimpe/">
+              <a target="_blank" href="https://www.linkedin.com/in/alexwtrimpe/">
                 LinkedIn
               </a>
             </li>
@@ -189,5 +174,4 @@
     <!-- Footer -->
 
     <!-- Back to Top icon -->
-    <a id="return-to-top" matRipple (click)="goToTop()"><i
-        class="fas fa-angle-up"></i></a>
+    <a id="return-to-top" matRipple (click)="goToTop()"><i class="fas fa-angle-up"></i></a>
