@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/alexwtrimpe",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -51,6 +52,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -135,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "alexwtrimpe"
+  "defaultProject": "alexwtrimpe",
+  "cli": {
+    "analytics": "a05c7489-ee70-4379-9613-0c7b07a1c0f8"
+  }
 }

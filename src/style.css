@@ -341,7 +341,7 @@ header .main-header {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: url(assets/images/typewriter-unsplash.jpg) center center;
+  background: url(assets/images/alex_detroit_downtown.jpg) center center;
   background-size: cover;
   z-index: 2;
 }
@@ -633,6 +633,7 @@ body.sub-page .header-text {
   font-size: 14px;
   font-weight: bold;
   position: relative;
+  cursor: pointer;
 }
 
 #menu ul.nav li.active a:after {
@@ -1668,7 +1669,8 @@ a.btn:focus {
 
   article,
   #page-content,
-  #menu .menu-transition {
+  #menu .menu-transition,
+  .medium-background {
     background-color: #212121;
   }
 

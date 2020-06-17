@@ -2,7 +2,7 @@
   <div class="header-text">
     <div class="header-text-inner">
       <h1>Alex W. Trimpe</h1>
-      <p>Technology and Coffee Nerd</p>
+      <p>Fueled by tech, coffee, & DIY sweat</p>
     </div>
   </div><!-- /header-text -->
   <!---Scroller--->
@@ -14,26 +14,111 @@
     </a>
   </div>
 </header>
-<section id="page-content" class="index-page">
-  <div class="container" style="padding-top:10em;">
-    <p>First of all, thank you for visiting and welcome to my website. I made
-      this site as a way for me to be a bit of
-      a show off and tell you about all of the things that I find interesting
-      about myself, but this site also serves as
-      a journal of sorts. It is always fun to look back and see what you have
-      done in the past or thoughts that you may
-      have had at the time, so this is just a way for me to keep track of that.
-    </p>
-    <p>Feel free to explore the site and hopefully I can keep you entertained
-      with something, if at least just
-      momentarily. Also, if you have any questions, comments, or vicious
-      personal attacks, there is a contact form in
-      the footer of each page that you can feel free to use any time. I will
-      get back to you as soon as possible. Enjoy
-      and make a great day!</p>
+
+<!-- About Me -->
+<section id="page-content" class="box-content box-4">
+  <div class="container">
+    <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+      <h2>About</h2>
+      <hr class="line">
+      <div class="intro">
+        My Team
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box-item">
+          <img src="assets/images/me_cartoon.jpg" class="img-responsive icon" />
+          <h3>Myself</h3>
+          <p>
+            Although not the head designer for our home, I am most definitely the
+            head of our IT department. I've also been called the Detroit Chip Gaines.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box-item">
+          <img src="assets/images/reagan_boston.jpg" class="img-responsive icon" />
+          <h3>My Fiance</h3>
+          <p>
+            My ultimate support system and partner. My fiance is not only my
+            idea board, but also my business partner and #1 confidant.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box-item">
+          <img src="assets/images/kilo.jpg" class="img-responsive icon" />
+          <h3>Our Pup</h3>
+          <p>
+            Kilo is our adopted pup who gives us constant joy in exchange for
+            never ending affection and attention. Seriously, never ending.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-md-4">
+          <div class="box-item">
+            <img src="assets/images/computer.jpg" class="img-responsive icon" />
+            <h3>Dell XPS 15</h3>
+            <p>The ultimate device in computing needs. This powerhouse makes
+              work fun and can handle anything I throw at
+              it.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-item">
+            <img src="assets/images/fordFusion.jpg" class="img-responsive icon" />
+            <h3>Ford Fusion Hybrid</h3>
+            <p>No kids yet, but you would not know that when I am rolling down
+              the street. Does that matter when I get 50
+              mpg and am saving the world?</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-item">
+            <img src="assets/images/beer.jpg" class="img-responsive icon" />
+            <h3>Michigan Beer</h3>
+            <p>Who doesn't enjoy a cold brew on a Friday evening or a sunny
+              weekend day? A nice way to relax and reset.
+              Your eyes need a break from code.</p>
+          </div>
+        </div>
+      </div> -->
   </div>
-  <!-- ////////////Content Box 01 -->
-  <section class="box-content box-1">
+</section>
+
+<!-- Scroll Image -->
+<section class="box-content box-5 box-style-3">
+  <div class="container">
+    <div class="row">
+      <div class="box-item wow fadeInDown" data-wow-delay=".1s" data-wow-duration="1s">
+        <blockquote>
+          <p>These aren't even prescription. I have never even been to the
+            eye doctor. Purely aesthetic.</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="box-content box-style-2">
+  <div class="container" style="padding-top:10em;">
+    <p>
+      I am a spring 2018 graduate of Indiana University's School of Informatics,
+      Computing, and Engineering. After graduation, I started working for Ford
+      Motor Company in their rotational college graduate program where I currently
+      remain today. Alongside this, I am currently pursuing my Master's degree
+      in Business Administration and also updating a 120 year old duplex in Detroit's
+      historic Woodbridge district.
+    </p>
+  </div>
+
+
+  <!-- Projects -->
+
+  <!-- <section class="box-content box-1">
     <div class="past-work">
       <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
         <h2>Past Work</h2>
@@ -101,7 +186,6 @@
             </div>
           </div>
         </div>
-        <!--
       <div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
         <div class="portfolio-box-inner">
           <img src="assets/images/5.jpg" class="img-responsive" alt="">
@@ -146,12 +230,11 @@
           </div>
         </div>
       </div>
-                -->
       </div>
       <div class="text-center"><a routerLink="/projects" routerLinkActive="active-link" class="btn btn-skin" matRipple>See
           All</a></div>
     </div>
-  </section>
+  </section> -->
 
   <router-outlet></router-outlet>
 
@@ -161,10 +244,10 @@
       <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
         <h2>My Skills</h2>
         <hr class="line">
-        <div class="intro">While I am good at all of these, some of these are
-          my babies and some of these are just <i>work</i>.</div>
+        <!-- <div class="intro">While I am good at all of these, some of these are
+          my babies and some of these are just <i>work</i>.</div> -->
       </div>
-      <div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
+      <div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s" style="overflow: hidden;">
         <div class="row">
           <div class="col-lg-2 col-md-3 col-sm-6">
             <div class="box-item">
@@ -204,93 +287,22 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-6">
             <div class="box-item">
+              <img src="assets/images/sql_server.png" class="img-responsive icon" />
+              <h3>SQL Server</h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="box-item">
               <img src="assets/images/unity.png" class="img-responsive icon" />
               <h3>Unity</h3>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ////////////Content Box 04 -->
-  <section class="box-content box-4 box-style-2">
-    <div class="container">
-      <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-        <h2>My Team</h2>
-        <hr class="line">
-        <div class="intro">Because no successful man is a me, myself, and I
-          operation.</div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box-item">
-            <img src="assets/images/alex_fraternity_headshot.jpg" class="img-responsive icon" />
-            <h3>Myself</h3>
-            <p>Since my own two feet take me everywhere I go, I am my own best
-              teammate because I am always there for
-              myself.</p>
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="box-item">
+              <img src="assets/images/wordpress.png" class="img-responsive icon" />
+              <h3>WordPress</h3>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box-item">
-            <img src="assets/images/coffee.jpg" class="img-responsive icon" />
-            <h3>Coffee</h3>
-            <p>The elixir of life, the wind to my wings. Where would the world
-              be without coffee? No creamer, no sugar,
-              just au natural.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box-item">
-            <img src="assets/images/alexReagan.PNG" class="img-responsive icon" />
-            <h3>My Fiance</h3>
-            <p>My ultimate support system and partner. My fiance is not only my
-              idea board, but also my business partner and #1 confidant.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box-item">
-            <img src="assets/images/computer.jpg" class="img-responsive icon" />
-            <h3>Dell XPS 15</h3>
-            <p>The ultimate device in computing needs. This powerhouse makes
-              work fun and can handle anything I throw at
-              it.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box-item">
-            <img src="assets/images/fordFusion.jpg" class="img-responsive icon" />
-            <h3>Ford Fusion Hybrid</h3>
-            <p>No kids yet, but you would not know that when I am rolling down
-              the street. Does that matter when I get 50
-              mpg and am saving the world?</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box-item">
-            <img src="assets/images/beer.jpg" class="img-responsive icon" />
-            <h3>Michigan Beer</h3>
-            <p>Who doesn't enjoy a cold brew on a Friday evening or a sunny
-              weekend day? A nice way to relax and reset.
-              Your eyes need a break from code.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ////////////Content Box 05 -->
-  <section class="box-content box-5 box-style-3">
-    <div class="container">
-      <div class="row">
-        <div class="box-item wow fadeInDown" data-wow-delay=".1s" data-wow-duration="1s">
-          <blockquote>
-            <p>These aren't even prescription. I have never even been to the
-              eye doctor. Purely aesthetic.</p>
-          </blockquote>
         </div>
       </div>
     </div>
@@ -357,7 +369,7 @@
 </section>
 
 ////////////Content Box 07 -->
-  <section class="box-content box-7 box-style-2">
+  <!-- <section class="box-content box-7 box-style-2">
     <div class="container">
       <div class="heading">
         <h2>My Organizations</h2>
@@ -385,6 +397,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
+</section>
+
+<section class="medium-background">
+  <div class="container" style="padding: 5%;">
+    <button routerLink="/contact" routerLinkActive="active-link" class="btn btn-skin btn-block mat-ripple">
+      Contact
+    </button>
+  </div>
 </section>

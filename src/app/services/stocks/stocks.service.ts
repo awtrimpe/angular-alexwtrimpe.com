@@ -4,7 +4,9 @@ import { catchError } from "rxjs/operators";
 import { Stock } from "src/app/models/interfaces.models";
 import { handleError } from "src/app/services/error/error.service";
 import { environment } from "src/environments/environment";
+import { Injectable } from "@angular/core";
 
+@Injectable({ providedIn: "root" })
 export class StockService {
   constructor(private http: HttpClient) {}
 
