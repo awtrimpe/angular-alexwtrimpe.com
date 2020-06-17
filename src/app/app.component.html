@@ -19,11 +19,11 @@
           <ul class="nav navbar-nav">
             <li><a routerLink="" (click)="navController()">Home</a></li>
             <li>
-              <a routerLink="/about" routerLinkActive="active-link" (click)="navController()">
-                About Me
+              <a (click)="scrollToElement('page-content')" routerLinkActive="active-link" (click)="navController()">
+                About
               </a>
             </li>
-            <li class="dropdown">
+            <!-- <li class="dropdown">
               <a (click)="dropdownMenuController('projects')" routerLinkActive="active-link">
                 Projects<i class="fa fa-chevron-down"></i>
               </a>
@@ -62,12 +62,6 @@
                   </ul>
                 </div>
               </div>
-            </li>
-            <!-- <li>
-              <a routerLink="/blog" routerLinkActive="active-link"
-                (click)="navController()">
-                Blog
-              </a>
             </li> -->
             <li>
               <a routerLink="/contact" routerLinkActive="active-link" (click)="navController()">
@@ -108,12 +102,12 @@
                     </div>
                   </div>
                   <div class="col-md-10">
-                    <h3>Location</h3>
+                    <h3>Current City</h3>
                     <p>Detroit, MI</p>
                   </div>
                 </div>
               </div>
-              <div class="contact-info-item">
+              <!-- <div class="contact-info-item">
                 <div class="row">
                   <div class="col-md-1">
                     <div class="contact-info-icon">
@@ -138,7 +132,7 @@
                     <p> alexwtrimpe@gmail.com</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

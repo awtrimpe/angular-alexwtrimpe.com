@@ -42,4 +42,14 @@ export class AppComponent implements OnInit {
   public goToTop() {
     window.scroll(0, 0);
   }
+
+  public scrollToElement(element): void {
+    console.log(element);
+    const el = document.getElementById(element);
+    el.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
 }

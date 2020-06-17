@@ -8,11 +8,8 @@ import {
   TestBed
 } from "@angular/core/testing";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import {
-  MatInputModule,
-  MatSnackBar,
-  MatSnackBarModule
-} from "@angular/material";
+import { MatInputModule } from "@angular/material/input";
+import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { Observable, of, throwError } from "rxjs";
